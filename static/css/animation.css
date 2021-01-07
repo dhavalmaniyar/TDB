@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.animation-body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    background: #674ab7;
+    
+}
+.circle{
+    transform-style: preserve-3d;
+    animation: animate 8s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: perspective(10000px) rotateY(360deg) rotateX(10deg);
+    }
+    100%{
+        transform: perspective(10000px) rotateY(0deg) rotateX(10deg);;
+    }
+}
+.circle .char{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    columns: #35146f;
+    font-size: 3em;
+    padding: 0px 7px;
+    border-top: 4px solid #35146f;
+    border-bottom: 4px solid #35146f;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--char-index)*13.3deg )) translateZ(180px);
+
+}

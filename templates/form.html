@@ -1,0 +1,63 @@
+{%extends 'basic.html'%}
+{%load static%}
+{%block body%}
+<style>
+    label{
+        color:white;
+    }
+    .content{
+ font-size: 13px;
+    }
+
+
+</style>
+<body>
+<section class="showcase">
+    <div class="video-container">
+        <img src="{% static '/images/deeplearning.jpg' %}" id="banner" width="100%" height="" alt="">
+    </div>
+
+    <div class="content">
+        <div class="card bg-dark " style="width: 100%;">
+  <div class="card-body">
+     <form method="post" action="/formsubmit" enctype="multipart/form-data">
+         {%csrf_token%}
+            <div class="form-row text-left">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail1">Name:</label>
+                    <input type="text" class="form-control" name="first_name" id="inputEmail1" pattern="[A-Za-z]{3,32}"
+                           placeholder="Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword2">Last Name:</label>
+                    <input type="text" class="form-control" name="last_name" id="inputPassword2" pattern="[A-Za-z]{3,32}"
+                           placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-row text-left">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email:</label>
+                    <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Phone no.</label>
+                    <input type="text" class="form-control" name="phone" id="inputPassword4"
+                           pattern="[6789][0-9]{9}" placeholder="Phone no">
+                </div>
+            </div>
+            <div class="form-row justify-content-center">
+                <div class="form-group ">
+                    <label for="exampleFormControlFile1">Upload Resume</label>
+                    <input type="file" class="form-control-file " name="resume" id="exampleFormControlFile1" required>
+                </div>
+            </div>
+            <button class="btn btn-outline-success" type="submit">Submit</button>
+        </form>
+  </div>
+</div>
+
+    </div>
+</section>
+
+</body>
+{%endblock body%}

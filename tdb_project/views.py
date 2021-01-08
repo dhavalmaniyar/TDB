@@ -10,7 +10,7 @@ def index(request):
 
 
 def company(request):
-    return render(request,'test.html')
+    return render(request,'demo.html')
 
 
 def career(request):

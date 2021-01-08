@@ -47,4 +47,4 @@ def submit(request):
     rresume=request.FILES['resume']
     submitdata=Applicant(name=fname,lastName=lname,email=remail,phone=rphone,resume=rresume)
     submitdata.save()
-    return render(request,'company.html',{'message':'Form submitted successfully'})
+    return render(request,'test.html',{'message':'Form submitted successfully'})

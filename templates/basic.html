@@ -63,9 +63,7 @@
 
         .content{
             animation: 1.5s ease-out 0s 1 sildeInFromTop;
-             padding-top:20px;
-            padding-bottom: 20px;
-
+             padding-top:10px;
             font-size: 18px;
             font-weight:300;
             z-index: 2;
@@ -75,14 +73,13 @@
         body {
             font-family: 'Open Sans', sans-serif;
             line-height: 1.5;
-
         }
 
 
         .navbar {
             background-color: black;
             opacity: 0.8;
-            z-index: 3;
+            z-index: 10;
             position: fixed;
             right: 0;
             left: 0;
@@ -90,12 +87,12 @@
         }
 
         .showcase {
-            height: 100vh;
+            height: 94vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: #fff;
+            color:  rgba(233, 230, 230, 0.808);
             padding: 0 20px;
         }
 
@@ -129,7 +126,7 @@
             left: 0;
             background: rgba(0, 0, 0, 0.5);
             position: absolute;
-            clip-path:polygon(0% 0%,100% 0%,100% 100%,0% 94%)
+            clip-path:polygon(0% 0%,100% 0%,100% 100%,0% 90%)
         }
 
         .content {
@@ -154,6 +151,7 @@
             display: inline;
             letter-spacing: 1px;
             margin: 0px 5px;
+
         }
 
         .foot {
@@ -162,6 +160,7 @@
             left: 0px;
             right: 0px;
             padding-top: 10px;
+            z-index:3;
         }
 
         #videobtn {
@@ -169,7 +168,7 @@
             top: 90px;
         }
         #banner{
-    clip-path:polygon(0% 0%,100% 0%,100% 88%,0% 80%)
+    clip-path:polygon(0% 0%,100% 0%,100% 90%,0% 80%)
 }
         @media screen and (max-width: 950px){
             .remove {
@@ -216,7 +215,7 @@
     <a class="navbar-brand text-white" href="{%url 'index'%}"><img src="{%static '/images/tdbWhite.png'%}"
                                                                    style="height: 30px;"
                                                                    alt=""> &nbsp;
-        TDB</a>
+        TDB.ai</a>
     <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
             data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -258,7 +257,7 @@
             <center>
 
                 <h5 class="text-white"><img src="{%static '/images/tdbWhite.png'%}"
-                                            style="height: 20px;font-weight: 900;" alt=""> TDB
+                                            style="height: 20px;font-weight: 900;" alt=""> TDB.ai
                 </h5>
             </center>
         </div>

@@ -100,6 +100,7 @@
          }
 
 
+
 </style>
 <script>
      jQuery(document).ready(function($){
@@ -111,14 +112,15 @@
         });
 
 
+
 </script>
 </head>
 
 
 <body>
 <div class="slides">
-    <section id="norwegian">
-        <section class="showcase" style="background-color: rgb(228, 5, 79);">
+    <section id="slide1">
+        <section class="showcase">
             <div class="video-container">
                 <img src="{%static '/images/deeplearning.jpg'%}" id="banner" width="100%" height="" alt="">
 
@@ -130,7 +132,7 @@
 
         </section>
     </section>
-    <section id="french" class="overflow-auto ">
+    <section id="slide2" class="overflow-auto ">
         <div>
             <p class="content container vertical-center ">
                 <br><br>
@@ -154,7 +156,7 @@
 
         </div>
     </section>
-    <section id="french1" class="container h-100 overflow-auto ">
+    <section id="slide3" class="container h-100 overflow-auto ">
 
         <div class="row h-100 justify-content-center align-items-center" style="margin: 0;">
             <div class="col-md text-center">
@@ -175,7 +177,7 @@
             </div>
         </div>
     </section>
-    <section id="french2 " class="container h-100  ">
+    <section id="slide4 " class="container h-100  ">
 
         <div class="row h-100 justify-content-center align-items-center">
             <div class="col-md">
@@ -197,12 +199,12 @@
             </section>
         </div>
     </section>
-    <section id="spanish" class="overflow-auto">
+    <section id="slide5" class="overflow-auto">
         <section class="container text-center">
             <br>
             <br>
             <h2 class="heading" style="margin-top:100px">Groups:</h2>
-           <div class="row justify-content-center">
+            <div class="row justify-content-center">
                 <div class="p-5">
                     <img src="{%static '/images/Biometric Eye.png'%}" width="150" height="150" alt="">
                     <h3 class="heading">TDB</h3>
@@ -221,28 +223,28 @@
 
             <br>
             <div style=" position:absolute; top:70%;left:50%;" class="remove">
- <div class="circle" data-splitting style="font-family: monospace;">
-                TBD-VELOXTECH-SolvingScale-
+                <div class="circle" data-splitting style="font-family: monospace;">
+                    TDB-VELOXTECH-SolvingScale-
 
+                </div>
+
+                <script>Splitting();</script>
             </div>
+            <!--            <div class="row justify-content-center">-->
+            <!--                <div class="p-2">-->
+            <!--                    <img src="/static/test.jpg" width="150" height="150" alt="">-->
+            <!--                </div>-->
 
-            <script>Splitting();</script>
-            </div>
-<!--            <div class="row justify-content-center">-->
-<!--                <div class="p-2">-->
-<!--                    <img src="/static/test.jpg" width="150" height="150" alt="">-->
-<!--                </div>-->
+            <!--                <div class="p-2">-->
+            <!--                    <img src="/static/test.jpg" width="150" height="150" alt="">-->
+            <!--                </div>-->
 
-<!--                <div class="p-2">-->
-<!--                    <img src="/static/test.jpg" width="150" height="150" alt="">-->
-<!--                </div>-->
-
-<!--            </div>-->
+            <!--            </div>-->
             <br>
         </section>
         <br>
     </section>
-    <section id="hindi">
+    <section id="slide6">
         <section class="carousel-section container ">
 
             <div class="carousel slide" id="carouselExampleControls" data-ride="carousel">
@@ -379,16 +381,6 @@
 
 <script>
     var mySlider = slider('.slides');
-
-
-
-
-
-
-
-
-
-
 </script>
 </body>
 {%endblock body%}

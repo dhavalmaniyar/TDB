@@ -78,26 +78,8 @@
     </p>
     <hr>
 </div>
-<br>
 <section class="container" style="margin-top: 50px;">
-
-    <div class="row align-items-center ">
-        <div class="col-md-3 text-center">
-            <h1 class="heading">Accolades</h1>
-        </div>
-        <div class="col-md-9">
-            <div class="row justify-content-center">
-                <div class="p-2 ">
-                    <img src="/static/test.jpg" width="200px" alt="">
-                </div>
-                <div class="p-2">
-                    <img src="/static/test.jpg" width="200px" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <h1 class="text-center heading" id="find" style="margin-top:50px;">Career Opportunities</h1><br>
+    <h3 class="text-center heading" id="find" style="margin-top:50px;">Career Opportunities</h3><br>
     <div class="row justify-content-center">
         {% for careerdata in data %}
 
@@ -105,22 +87,17 @@
 
         <div class="gallery p-2 border">
             <div>
-                <div class="text">
                     <h5><strong> Opportunity: &nbsp;{{careerdata.opportunity}}</strong>
                         </h5>
                     <hr>
                     <p style="font-size:13px"><strong>Experience:</strong> {{careerdata.experience}} Years</p>
                     <p style="font-size:13px"><strong>Location:</strong> {{careerdata.location}}</p>
                     <p style="font-size:13px"><strong>Date: </strong>{{careerdata.createdOn}}</p>
-                    <!--                    <button class="btn btn-danger" style="margin-left:40%" >Apply</button>-->
-
-
-                    <!-- Button trigger modal -->
                     <button type="button" class="btn btn-danger" style="margin-left:40%;" data-toggle="modal"
                             data-target="#modal{{careerdata.id}}">
                         Apply
                     </button>
-                </div>
+
             </div>
 
         </div>
@@ -130,7 +107,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal-title heading" id="exampleModalLongTitle">{{careerdata.opportunity}}</h2>
+                        <h4 class="modal-title heading" id="exampleModalLongTitle">{{careerdata.opportunity}}</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -138,11 +115,11 @@
                     <div class="modal-body">
                         <h3>Skills Required:</h3>
 
-                        <p class="content" style="color:grey;">{{careerdata.skills|linebreaksbr}}</p>
+                        <p class="content" style="color:grey;font-size: 15px; ">{{careerdata.skills|linebreaksbr}}</p>
 
                         <h3>Responsibilities:</h3>
 
-                        <p class="content" style="color:grey;">{{ careerdata.responsibilities|linebreaksbr }}</p>
+                        <p class="content" style="color:grey;font-size: 15px;">{{ careerdata.responsibilities|linebreaksbr }}</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>

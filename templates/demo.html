@@ -8,52 +8,14 @@
       margin-right:50px;
     }
 
-    h3 {
-      color: rgb(255, 153, 0);
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    }
-
-    .carousel-body {
-      background-color: #000;
-    }
-
-    .carousel-item {
-      height: 80vh;
-      background-size: cover;
-
-      background-position: center center;
-
-    }
-
-    .carousel-item h1 {
-      margin: 0;
-      color: rgb(228, 5, 79);
-    }
-
-    .carousel-item p {
-      margin: 0;
-      color: white;
-    }
-
     .carousel-indicators li {
       width: 5px;
       height: 5px;
       border-radius: 100%;
       background-color: red;
     }
-
-
-
-    .carousel-control-prev,
-    .carousel-control-next {
-      top: 95%;
-      bottom: 10%;
-      border-radius: 100%;
-      background-color: red;
-    }
-
     .carousel-head {
-      margin-top: 40px;
+      margin-top: 6vh;
     }
 
     .carousel-control-prev-icon {
@@ -79,6 +41,10 @@
          width:440px;
          }
 
+         .carousel-inner{
+            height:82vh;
+         }
+
 .remove{
 font-size:14px;
 }
@@ -89,6 +55,8 @@ font-size:14px;
 
 }
 
+
+
 </style>
 <!-- Swiper -->
 <div class="swiper-container">
@@ -97,7 +65,6 @@ font-size:14px;
             <section class="showcase">
                 <div class="video-container">
                     <img src="{%static '/images/company.jpg'%}" id="banner" width="100%" height="" alt="">
-
                 </div>
 
                 <div class="content">
@@ -189,14 +156,14 @@ font-size:14px;
             <section class="container">
 
 
-                <div class="row "style="display:inline-block" >
+                <div class="row " style="display:inline-block">
                     <h2 class="heading">Groups:</h2>
-                    <div class="col-md "    >
+                    <div class="col-md ">
                         <img src="{%static '/images/Biometric Eye.png'%}" width="100" height="100" alt="">
                         <h3 class="heading">TDB</h3>
                     </div>
-                    <div class="row " >
-                        <div class="col-md groups" >
+                    <div class="row ">
+                        <div class="col-md groups">
                             <img src="{%static '/images/veloxtech.jpg'%}" width="100" height="100" alt="">
                             <h3 class="heading">VeloxTech</h3>
                         </div>
@@ -231,11 +198,12 @@ font-size:14px;
             </section>
 
 
-        </div><br>
-       <h1 class="carousel-head text-center">In the news</h1>
-        <div class="swiper-slide h-100" style="display:inline-block;">
-            <section class="carousel-section container overflow-auto">
+        </div>
 
+        <div class="swiper-slide " style="display:inline-block;">
+
+            <section class="container overflow-auto">
+                <h1 class="carousel-head text-center">In the news</h1>
                 <div class="carousel slide" id="carouselExampleControls" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -247,7 +215,7 @@ font-size:14px;
                     <div class="carousel-inner text-center">
 
 
-                        <div class="carousel-item active">
+                        <div class="carousel-item h-100 active">
                             <div class="d-flex h-100 align-items-center justify-content-center">
                                 <h6>Text 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint architecto
                                     accusamus est inventore quaerat velit doloribus voluptate ab ipsum, accusantium
@@ -257,8 +225,8 @@ font-size:14px;
 
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="d-flex h-100 align-items-center justify-content-center">
+                        <div class="carousel-item h-100">
+                            <div class="d-flex h-100 align-items-center justify-content-center ">
                                 <h6>Text 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint architecto
                                     accusamus est inventore quaerat velit doloribus voluptate ab ipsum, accusantium
                                     amet. Dolorem sunt nulla, corporis praesentium perspiciatis perferendis ad.
@@ -266,7 +234,7 @@ font-size:14px;
                                 </h6>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item h-100">
                             <div class="d-flex h-100 align-items-center justify-content-center">
                                 <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus,
                                     excepturi
@@ -281,7 +249,7 @@ font-size:14px;
                                 </h6>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item h-100">
                             <div class="d-flex h-100 align-items-center justify-content-center">
                                 <h6>Text 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint architecto
                                     accusamus est inventore quaerat velit doloribus voluptate ab ipsum, accusantium
@@ -301,7 +269,7 @@ font-size:14px;
                                 </h6>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item h-100">
                             <div class="d-flex h-100 align-items-center justify-content-center">
                                 <h6>Text 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint architecto
                                     accusamus est inventore quaerat velit doloribus voluptate ab ipsum, accusantium
@@ -324,13 +292,13 @@ font-size:14px;
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
                            data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"
-                              style=" border-radius:100%; padding:20px;"></span>
+                              style=" border-radius:100%; "></span>
                             <span class="sr-only">Previous</span>
                         </a>
                         <a class="carousel-control-next" href="#carouselExampleControls" role="button"
                            data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"
-                              style=" border-radius:100%; padding:20px;"></span>
+                              style=" border-radius:100%;"></span>
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
@@ -405,6 +373,8 @@ font-size:14px;
                 clickable: true,
             },
         });
+
+
 
 </script>
 

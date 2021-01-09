@@ -21,7 +21,7 @@
             z-index: 2;
         }
         .indexfoot{
-        position:absolute;
+       /* position:absolute;
 
             bottom: 0;
             left: 0;
@@ -30,7 +30,7 @@
             z-index:7;
             font-size:14px;
 
-        }
+        }*/
         #videobtn{
             animation:1.5s ease-out 0s 1 slideInFromLeft;
         }
@@ -52,43 +52,11 @@
         <button id="videobtn" class="btn btn-outline-warning" onclick="window.open('{% url 'company'%}','_self');">
             DISCOVER TDB
         </button>
-        <div style="background-color: black; " class="indexfoot">
-            <div class="row" style="margin-left:0 ; margin-right:0px ">
-                <div class="col-md-2">
-                    <center>
 
-                        <h5 class="text-white"><img src="{%static '/images/tdbWhite.png'%}"
-                                                    style="height: 20px;font-weight: 900;" alt=""> TDB.ai
-                        </h5>
-                    </center>
-                </div>
-                <div class="col-md-8 remove">
-                    <center>
-                        <ul>
-                            <li class="footer-nav"><a class="social" href="{%url 'company'%}">COMPANY</a></li>
-                            <li class="footer-nav"><a class="social" href="{%url 'product'%}">PRODUCTS</a></li>
-                            <li class="footer-nav"><a class="social" href="{%url 'team'%}">TEAM</a></li>
-                            <li class="footer-nav"><a class="social" href="{%url 'careers'%}">CAREERS</a></li>
-                            <li class="footer-nav"><a class="social" href="{%url 'contact'%}">CONTACT</a></li>
-                            <li class="footer-nav"><a class="social" href="#">TERMS & CONDITIONS</a></li>
-                            <li class="footer-nav"><a class="social" href="#">PRIVACY POLICY</a></li>
-                        </ul>
-                    </center>
-                </div>
-                <div class="col-md-2 remove">
-                    <ul class="footer-list">
-                        <li class="footer-nav"><a class="social" href=""><i class="fab fa-facebook-f fa-lg"></i></a>
-                        </li>
-                        <li class="footer-nav"><a class="social" href=""><i class="fab fa-instagram fa-lg"></i></a></li>
-                        <li class="footer-nav"><a class="social" href=""><i class="fab fa-linkedin fa-lg"></i></a></li>
-                        <li class="footer-nav"><a class="social" href=""><i class="fab fa-twitter fa-lg"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
 
 
 </section>
+
 
 {%endblock body %}

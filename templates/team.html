@@ -68,12 +68,12 @@
     </div>
 
     <div class="content">
-      <h1 style="font-size:7vh">Tech Driven Basic</h1>
+      <h1 style="font-size:7vh" data-aos="zoom-out-down" data-aos-once="false">Tech Driven Basic</h1>
     </div>
 
   </section>
   <div class="container" >
-    <p class="content">
+    <p class="content" data-aos="fade-up">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorum libero nesciunt voluptate animi quasi
       quisquam itaque, eaque dicta incidunt earum impedit ea eveniet quia Lorem, ipsum dolor sit amet consectetur
       adipisicing elit. Minus, illum? Ex, sunt error harum laborum voluptas, illo eligendi omnis ad nesciunt
@@ -85,8 +85,8 @@
 <hr>
   </div>
   <section class="container">
-    <h1 class="text-center heading my-5">Advisory Board</h1>
-    <div class="row justify-content-center" style="height:500">
+    <h1 class="text-center heading my-5" data-aos="zoom-out-down" >Advisory Board</h1>
+    <div class="row justify-content-center"  data-aos="fade-left"  style="height:500">
       {% for data in teamData%}
       {% if data.inAdvisoryBoard == 1 %}
       <div class="gallery p-2 border">
@@ -102,8 +102,8 @@
       {% endfor %}
 
     </div><hr>
-       <h1 class="text-center heading my-5">C-Level</h1>
-    <div class="row justify-content-center" style="height:500">
+       <h1 class="text-center heading my-5" data-aos="zoom-out-down">C-Level</h1>
+    <div class="row justify-content-center" data-aos="fade-left" style="height:500">
       {% for data in teamData%}
       {% if data.in_C_Level == 1 %}
       <div class="gallery p-2 border">
@@ -121,6 +121,7 @@
     </div>
 
   </section>
+<br>
 
 </body>
 {%endblock body%}

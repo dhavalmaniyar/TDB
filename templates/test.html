@@ -116,7 +116,10 @@
 
 </script>
 </head>
+{% if message %}
 
+<script>alert("{{ message }}")</script>
+{% endif %}
 
 <body>
 <div class="slides">

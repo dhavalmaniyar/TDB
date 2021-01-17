@@ -1,6 +1,10 @@
 {%extends 'basic.html'%}
 {%load static%}
 {%block body%}
+{% if message %}
+
+<script>alert("{{ message }}")</script>
+{% endif %}
 <style>
         .client {
       font-size: 15px;
@@ -58,6 +62,7 @@ font-size:14px;
 
 
 </style>
+
 <!-- Swiper -->
 <div class="swiper-container">
     <div class="swiper-wrapper">
